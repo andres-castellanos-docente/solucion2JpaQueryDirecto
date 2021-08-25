@@ -18,7 +18,7 @@ public interface CiudadRepository extends JpaRepository<CiudadEntity, Integer> {
 
     @Modifying
     @Query(value = "update ciudad set activo= :activo where id_pais = :id_pais", nativeQuery = true)
-    void updateCiudades(Boolean activo, Integer id_pais);
+    void updateCiudades(Boolean activo, Integer id_pais) throws  RuntimeException ;
 
 
 }

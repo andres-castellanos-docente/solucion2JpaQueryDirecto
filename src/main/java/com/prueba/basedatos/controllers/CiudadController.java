@@ -38,7 +38,7 @@ public class CiudadController {
 
     @PostMapping("/ciudadcambestado")
     public ResponseEntity<CiudadResponse> editStatusCiudad(@RequestBody CiudadRequests ciudadRequests) {
-        return ciudadService.inactivarCiudad(ciudadRequests);
+        return ciudadService.inactivarCiudadporPais(ciudadRequests);
     }
 
 
